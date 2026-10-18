@@ -86,7 +86,7 @@ public class MicrosoftBackgroundLogin {
                 checkMcProfile(mcToken);
                 fetchOwnedItems(mcToken);
 
-                if (!hasProfile && doesOwnGame) {
+                if (!hasProfile) {
                     throw new PresentedException(R.string.minecraft_no_username_set);
                 } else if (!doesOwnGame) {
                     mcName = "Demo.Player";
